@@ -44,7 +44,7 @@
     <NativeReference Include="LFLiveKit.framework">
       <Kind>Framework</Kind>
       <ForceLoad>True</ForceLoad>
-      <Frameworks>VideoToolbox, AudioToolbox, AVFoundation, Foundataion, UIkit</Frameworks>
+      <Frameworks>VideoToolbox, AudioToolbox, AVFoundation, Foundation, UIkit</Frameworks>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />

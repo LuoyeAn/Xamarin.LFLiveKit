@@ -265,6 +265,8 @@ namespace Xamarin.LFLiveKit
         nint UnSendCount { get; set; }
     }
 
+    interface ILFLiveSessionDelegate{}
+
     // @protocol LFLiveSessionDelegate <NSObject>
     [Protocol, Model]
     [BaseType(typeof(NSObject))]
@@ -294,7 +296,7 @@ namespace Xamarin.LFLiveKit
     {
         [Wrap("WeakDelegate")]
         [NullAllowed]
-        LFLiveSessionDelegate Delegate { get; set; }
+        ILFLiveSessionDelegate Delegate { get; set; }
 
         // @property (nonatomic, weak) id<LFLiveSessionDelegate> _Nullable delegate;
         [NullAllowed, Export("delegate", ArgumentSemantic.Weak)]
